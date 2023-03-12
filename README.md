@@ -1,7 +1,7 @@
 # rhode-database
 A wpf project for a certain gatcha game
 
-Mostly just for educational purposes/ test run for using WPF
+Mostly just for educational purposes/ test run for using WPF \n
 Will continue to add stuff, as it's still unfinished
 
 
