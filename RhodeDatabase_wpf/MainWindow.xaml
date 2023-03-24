@@ -6,99 +6,231 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RhodeDatabase_wpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="752" Width="1003" Background="#FF3A4065" ResizeMode="NoResize">
-    <Grid x:Name="eN" HorizontalAlignment="Left" Height="573" Margin="24,53,0,0" VerticalAlignment="Top" Width="894">
-        <Border CornerRadius="10" BorderThickness="3" BorderBrush="Gray" Margin="-40,-58,-100,583" Background="#FF1F2534" Opacity="0.5" >
-            <DockPanel>
-                <Canvas Height="44" VerticalAlignment="Top" Margin="0,0,0,-2" >
-                    <TextBox x:Name="TB_SearchBar" Text="TextBox with CornerRadius" Background="#FF3A4065" Foreground="White" Height="23" Canvas.Left="39" Canvas.Top="10" Width="226" KeyDown="Input">
-                        <TextBox.Resources>
-                            <Style TargetType="{x:Type Border}">
-                                <Setter Property="CornerRadius" Value="3"/>
-                            </Style>
-                        </TextBox.Resources>
-                    </TextBox>
-
-                </Canvas>
-            </DockPanel>
-        </Border>
-        <!-- UserInput -->
-
-        <Border CornerRadius="10" BorderThickness="3" BorderBrush="Gray" Margin="25,13,-40,347" Background="Transparent" Opacity="0.5" >
-            <DockPanel Margin="207,0,0,0">
-                <Canvas Height="122" VerticalAlignment="Top" >
-                    <Border CornerRadius="10" BorderThickness="3" BorderBrush="Gray" Background="#FF1F2534" Opacity="0.5 " Canvas.Left="-202" Canvas.Top="6" Height="195" Width="192">
-                        <Image x:Name="image_OperatorPic" HorizontalAlignment="Left" Height="173" VerticalAlignment="Top" Width="183" Margin="-1,2,-5,0"/>
-                    </Border>
-                    <Border Canvas.Left="72" Canvas.Top="28" BorderThickness="2" BorderBrush="wHITE" CornerRadius="3">
-                        <Label x:Name="lb_codename" Content="DEFENDER"  HorizontalAlignment="Left" Background="#FF1F2534" Height="37" VerticalAlignment="Top" Width="180" Canvas.Left="72" Canvas.Top="16" FontSize="26" Foreground="White" FontFamily="Tw Cen MT Condensed"/>
-                    </Border>
-                    <Border Canvas.Left="72" Canvas.Top="93" BorderThickness="2" BorderBrush="wHITE" CornerRadius="3">
-                        <Label x:Name="lb_rarity" Content="HEALING DEFENDER"  HorizontalAlignment="Left" Background="#FF1F2534" Height="36" VerticalAlignment="Top" Width="180" Canvas.Left="72" Canvas.Top="16" FontFamily="Tw Cen MT Condensed" FontSize="26" Foreground="White"/>
-                    </Border>
-                    <Label Content="SECURITY ID: "  HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="172" Canvas.Left="71" RenderTransformOrigin="0.5,0.5" FontFamily="Tw Cen MT Condensed" Foreground="White" FontSize="20" Canvas.Top="66"/>
-                    <Label Content="CODENAME :"  HorizontalAlignment="Left" Height="31" VerticalAlignment="Top" Width="172" Canvas.Left="71" RenderTransformOrigin="0.5,0.5" FontFamily="Tw Cen MT Condensed" Foreground="White" FontSize="20"/>
-                    <Border Canvas.Left="72" Canvas.Top="158" BorderThickness="2" BorderBrush="wHITE" CornerRadius="3">
-                        <Label x:Name="lb_prefab" Content="HEALING DEFENDER"  HorizontalAlignment="Left" Background="#FF1F2534" Height="36" VerticalAlignment="Top" Width="180" Canvas.Left="72" Canvas.Top="16" FontFamily="Tw Cen MT Condensed" FontSize="26" Foreground="White"/>
-                    </Border>
-                    <Label Content="IDENTIFICATION :"  HorizontalAlignment="Left" Height="31" VerticalAlignment="Top" Width="172" Canvas.Left="71" RenderTransformOrigin="0.5,0.5" FontFamily="Tw Cen MT Condensed" Foreground="White" FontSize="20" Canvas.Top="132"/>
-                    <Image x:Name="myImage_Copy1" Height="54" Canvas.Left="10" Canvas.Top="80" Width="56" RenderTransformOrigin="0.594,1.486" Source="OpPictures/system_100_mys.png" />
-                    <Image x:Name="myImage_Copy2" Height="54" Canvas.Left="11" Canvas.Top="18" Width="56" RenderTransformOrigin="0.594,1.486" Source="OpPictures/system_100_mys.png" />
-
-                </Canvas>
-            </DockPanel>
+        Title="MainWindow" Height="685.25" Width="937" Background="#FF161825" ResizeMode="NoResize">
+    <Grid>
+        <!--<MediaElement x:Name="Background_Video" HorizontalAlignment="Left" Height="654" Margin="1,2,0,0" VerticalAlignment="Top" Width="929" Source="RhodeAssets/home_bg.mp4" LoadedBehavior="Manual" UnloadedBehavior="Stop" Stretch="Fill" MediaEnded="Background_Video_MediaEnded" />-->
+        <Border BorderBrush="Black" Opacity="0.7" BorderThickness="1" Background="#FF121212" CornerRadius="10" Margin="6,90,0,0" Height="265" VerticalAlignment="Top" HorizontalAlignment="Left" Width="904">
+            <Border.Effect>
+                <DropShadowEffect Color="Black" Direction="320" ShadowDepth="5"
+                          Opacity="0.8" BlurRadius="10"/>
+            </Border.Effect>
         </Border>
 
-        <!--Faction/Nation-->
-        <Border CornerRadius="10" BorderThickness="3"  Margin="619,319,1,32"  Opacity="0.5 ">
-            <DockPanel>
-                <Canvas Height="122" VerticalAlignment="Top" >
 
-                    <Border Canvas.Left="72" Canvas.Top="28" BorderThickness="2" BorderBrush="wHITE" CornerRadius="3">
-                        <Label x:Name="lb_nation" Content="DEFENDER"  HorizontalAlignment="Left" Background="#FF1F2534" Height="37" VerticalAlignment="Top" Width="180" Canvas.Left="72" Canvas.Top="16" FontSize="26" Foreground="White" FontFamily="Tw Cen MT Condensed"/>
-                    </Border>
-                    <Border Canvas.Left="72" Canvas.Top="97" BorderThickness="2" BorderBrush="wHITE" CornerRadius="3">
-                        <Label x:Name="lb_group" Content="HEALING DEFENDER"  HorizontalAlignment="Left" Background="#FF1F2534" Height="36" VerticalAlignment="Top" Width="180" Canvas.Left="72" Canvas.Top="16" FontFamily="Tw Cen MT Condensed" FontSize="26" Foreground="White"/>
-                    </Border>
-                    <Border Canvas.Left="72" Canvas.Top="166" BorderThickness="2" BorderBrush="wHITE" CornerRadius="3">
-                        <Label x:Name="lb_team" Content="HEALING DEFENDER"  HorizontalAlignment="Left" Background="#FF1F2534" Height="36" VerticalAlignment="Top" Width="180" Canvas.Left="72" Canvas.Top="16" FontFamily="Tw Cen MT Condensed" FontSize="26" Foreground="White"/>
-                    </Border>
-                    <Label Content="SUB PROFESSION :"  HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="172" Canvas.Left="75" RenderTransformOrigin="0.5,0.5" FontFamily="Tw Cen MT Condensed" Foreground="White" FontSize="20" Canvas.Top="68"/>
-                    <Label Content="PROFESSION :"  HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="172" Canvas.Left="74" RenderTransformOrigin="0.5,0.5" FontFamily="Tw Cen MT Condensed" Foreground="White" FontSize="20" Canvas.Top="-1"/>
-                    <Label Content="POSTION :"  HorizontalAlignment="Left" Height="31" VerticalAlignment="Top" Width="172" Canvas.Left="74" RenderTransformOrigin="0.5,0.5" FontFamily="Tw Cen MT Condensed" Foreground="White" FontSize="20" Canvas.Top="138"/>
-                    <Image HorizontalAlignment="Left" Height="64" VerticalAlignment="Top" Width="66" RenderTransformOrigin="1.696,1.645" Canvas.Left="3" Canvas.Top="15"/>
-                    <Image HorizontalAlignment="Left" Height="56" VerticalAlignment="Top" Width="56"  OpacityMask="White" RenderTransformOrigin="0.574,0.394" Canvas.Left="6" Canvas.Top="84"/>
-                    <Image HorizontalAlignment="Left" Height="56" VerticalAlignment="Top" Width="56"  OpacityMask="White" RenderTransformOrigin="0.574,0.394" Canvas.Left="8" Canvas.Top="150"/>
 
-                </Canvas>
-            </DockPanel>
-        </Border>
-        <Border CornerRadius="10" BorderThickness="3" BorderBrush="Gray" Margin="191,300,429,51" Background="#FF1F2534" Opacity="0.5 ">
-            <DockPanel>
-                <Canvas Height="122" VerticalAlignment="Top" >
-
-                    <Border Canvas.Left="72" Canvas.Top="28" BorderThickness="2" BorderBrush="wHITE" CornerRadius="3">
-                        <Label x:Name="lb_nation1" Content="DEFENDER"  HorizontalAlignment="Left" Background="#FF1F2534" Height="37" VerticalAlignment="Top" Width="180" Canvas.Left="72" Canvas.Top="16" FontSize="26" Foreground="White" FontFamily="Tw Cen MT Condensed"/>
-                    </Border>
-                    <Border Canvas.Left="72" Canvas.Top="97" BorderThickness="2" BorderBrush="wHITE" CornerRadius="3">
-                        <Label x:Name="lb_group1" Content="HEALING DEFENDER"  HorizontalAlignment="Left" Background="#FF1F2534" Height="36" VerticalAlignment="Top" Width="180" Canvas.Left="72" Canvas.Top="16" FontFamily="Tw Cen MT Condensed" FontSize="26" Foreground="White"/>
-                    </Border>
-                    <Border Canvas.Left="72" Canvas.Top="166" BorderThickness="2" BorderBrush="wHITE" CornerRadius="3">
-                        <Label x:Name="lb_team1" Content="HEALING DEFENDER"  HorizontalAlignment="Left" Background="#FF1F2534" Height="36" VerticalAlignment="Top" Width="180" Canvas.Left="72" Canvas.Top="16" FontFamily="Tw Cen MT Condensed" FontSize="26" Foreground="White"/>
-                    </Border>
-                    <Label Content="FACTION :"  HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="172" Canvas.Left="75" RenderTransformOrigin="0.5,0.5" FontFamily="Tw Cen MT Condensed" Foreground="White" FontSize="20" Canvas.Top="68"/>
-                    <Label Content="NATIONALITY :"  HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="172" Canvas.Left="74" RenderTransformOrigin="0.5,0.5" FontFamily="Tw Cen MT Condensed" Foreground="White" FontSize="20" Canvas.Top="-1"/>
-                    <Label Content="GROUP :"  HorizontalAlignment="Left" Height="31" VerticalAlignment="Top" Width="172" Canvas.Left="74" RenderTransformOrigin="0.5,0.5" FontFamily="Tw Cen MT Condensed" Foreground="White" FontSize="20" Canvas.Top="138"/>
-                    <Image HorizontalAlignment="Left" Height="64" VerticalAlignment="Top" Width="66" RenderTransformOrigin="1.696,1.645" Canvas.Left="3" Canvas.Top="15"/>
-                    <Image HorizontalAlignment="Left" Height="56" VerticalAlignment="Top" Width="56"  OpacityMask="White" RenderTransformOrigin="0.574,0.394" Canvas.Left="6" Canvas.Top="84"/>
-                    <Image HorizontalAlignment="Left" Height="56" VerticalAlignment="Top" Width="56"  OpacityMask="White" RenderTransformOrigin="0.574,0.394" Canvas.Left="8" Canvas.Top="150"/>
-
-                </Canvas>
-            </DockPanel>
+        <Border BorderBrush="Black" Opacity="0.7" BorderThickness="1" Background="#FF121212" CornerRadius="10" Margin="33,368,0,0" Height="250" VerticalAlignment="Top" HorizontalAlignment="Left" Width="556">
+            <Border.Effect>
+                <DropShadowEffect Color="Black" Direction="320" ShadowDepth="5"
+                          Opacity="0.8" BlurRadius="10"/>
+            </Border.Effect>
         </Border>
 
-        <!--foafma-->
-        <!-- Name-->
-        <!-- Name-->
+        <Border BorderBrush="Black" Opacity="0.7" BorderThickness="1" Background="#FF121212" CornerRadius="10" Margin="18,-4,0,0" Height="64" VerticalAlignment="Top" HorizontalAlignment="Left" Width="882">
+            <Border.Effect>
+                <DropShadowEffect Color="Black" Direction="320" ShadowDepth="5"
+                          Opacity="0.8" BlurRadius="10"/>
+            </Border.Effect>
+        </Border>
+        <Grid Margin="75,11,591,595.5">
+            <Image Source="Stats_Icon/sub_tactician_icon.png" Margin="-37,0,263,-3" Opacity="0.7"/>
+            <TextBox  Width="233" Height="40" Background="Transparent" Foreground="DarkGray" OpacityMask="AliceBlue" VerticalAlignment="Center" Opacity="0.7" HorizontalAlignment="Left" x:Name="TB_SearchBar" Margin="5,2,0,1" FontFamily="Tw Cen MT Condensed" FontSize="35" KeyDown="Input"/>
+            <TextBlock IsHitTestVisible="False" FontFamily="Tw Cen MT Condensed" Text="Enter Search Term Here" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Foreground="DarkGray" Background="Transparent">
+                <TextBlock.Style>
+                    <Style TargetType="{x:Type TextBlock}">
+                        <Setter Property="Visibility" Value="Collapsed"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding Text, ElementName=TB_SearchBar}" Value="">
+                                <Setter Property="Visibility" Value="Visible"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+        </Grid>
+
+        <DockPanel Margin="207,100,0,0" HorizontalAlignment="Left" Width="161" Opacity="0.7" Height="198" VerticalAlignment="Top">
+            <Canvas Height="122" VerticalAlignment="Top" >
+                <Border Canvas.Left="72" Canvas.Top="28" BorderThickness="1,0,1,0" BorderBrush="LightGray" Width="225" >
+                    <Label x:Name="lb_codename" Content="????"  HorizontalAlignment="Left" Height="37" VerticalAlignment="Top" Width="206" Canvas.Left="72" Canvas.Top="16" FontSize="26" Foreground="White" FontFamily="Tw Cen MT Condensed"/>
+                </Border>
+                <Border Canvas.Left="72" Canvas.Top="93" BorderThickness="1,0,1,0" BorderBrush="LightGray" >
+                    <Label x:Name="lb_rarity" Content="????"  HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="225" Canvas.Left="72" Canvas.Top="16" FontFamily="Tw Cen MT Condensed" FontSize="26" Foreground="White"/>
+                </Border>
+                <Label Content="RARITY: "  HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="172" Canvas.Left="71" RenderTransformOrigin="0.5,0.5" FontFamily="Tw Cen MT Condensed" Foreground="White" FontSize="20" Canvas.Top="66"/>
+                <Label Content="CODENAME :"  HorizontalAlignment="Left" Height="31" VerticalAlignment="Top" Width="172" Canvas.Left="71" RenderTransformOrigin="0.5,0.5" FontFamily="Tw Cen MT Condensed" Foreground="White" FontSize="20" Canvas.Top="6"/>
+                <Border Canvas.Left="72" Canvas.Top="158"  BorderThickness="1,0,1,0" BorderBrush="LightGray" Width="225">
+                    <Label x:Name="lb_prefab" Content="????"  HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="229" Canvas.Left="72" Canvas.Top="16" FontFamily="Tw Cen MT Condensed" FontSize="26" Foreground="White"/>
+                </Border>
+                <Label Content="PREFABKEY :"  HorizontalAlignment="Left" Height="31" VerticalAlignment="Top" Width="172" Canvas.Left="71" RenderTransformOrigin="0.5,0.5" FontFamily="Tw Cen MT Condensed" Foreground="White" FontSize="20" Canvas.Top="132"/>
+                <Image x:Name="myImage_Copy1" Height="54" Canvas.Left="10" Canvas.Top="80" Width="56" RenderTransformOrigin="0.594,1.486" Source="OpPictures/system_100_mys.png" />
+                <Image x:Name="myImage_Copy2" Height="54" Canvas.Left="11" Canvas.Top="18" Width="56" RenderTransformOrigin="0.594,1.486" Source="OpPictures/system_100_mys.png" />
+            </Canvas>
+        </DockPanel>
+
+
+        <!-- Image-->
+        <Image x:Name="image_background" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="172" Stretch="Fill" Margin="46,111,0,0" />
+        <Image x:Name="image_OperatorNation" HorizontalAlignment="Right" Height="236" VerticalAlignment="Top" Width="225" Margin="0,108,28,0" Stretch="Fill" RenderTransformOrigin="0.583,0.574" Opacity="0.5"/>
+        <Border  VerticalAlignment="Top" HorizontalAlignment="Left" Opacity="1" CornerRadius="3" BorderThickness="3" BorderBrush="Gray" Height="185" Width="178" Margin="44,108,0,0">
+            <Image x:Name="image_OperatorPic" HorizontalAlignment="Right" Height="175" VerticalAlignment="Top" Width="172" Margin="0,3,0,0" Stretch="Fill" RenderTransformOrigin="0.583,0.574"/>
+        </Border>
+        <!-- Image-->
+
+        <DockPanel Margin="332,360,0,0"  Opacity="0.7" HorizontalAlignment="Left" Width="284" Height="260" VerticalAlignment="Top">
+            <Canvas Height="122" VerticalAlignment="Top" >
+                <Border Canvas.Left="72" Canvas.Top="28">
+                    <Label x:Name="lb_health" Content="XXXX"  HorizontalAlignment="Left" Height="37" VerticalAlignment="Top" Width="247" Canvas.Left="72" Canvas.Top="16" FontSize="26" Foreground="White" FontFamily="Tw Cen MT Condensed"/>
+                </Border>
+                <Border Canvas.Left="72" Canvas.Top="93" >
+                    <Label x:Name="lb_def" Content="XXXX"  HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="165" Canvas.Left="72" Canvas.Top="16" FontFamily="Tw Cen MT Condensed" FontSize="26" Foreground="White"/>
+                </Border>
+                <Label Content="PHYSICAL DEFENSE :"  HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="172" Canvas.Left="71" RenderTransformOrigin="0.5,0.5" FontFamily="Tw Cen MT Condensed" Foreground="#FF8AEAFF" FontSize="20" Canvas.Top="66"/>
+                <Label Content="HEALTH : "  HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="172" Canvas.Left="70" RenderTransformOrigin="0.5,0.5" FontFamily="Tw Cen MT Condensed" Foreground="#FF8CFFA6" FontSize="20" Canvas.Top="4"/>
+                <Border Canvas.Left="72" Canvas.Top="158" >
+                    <Label x:Name="lb_magicRes" Content="XXXX"  HorizontalAlignment="Left"  Height="36" VerticalAlignment="Top" Width="162" Canvas.Left="72" Canvas.Top="16" FontFamily="Tw Cen MT Condensed" FontSize="26" Foreground="White"/>
+                </Border>
+                <Border Canvas.Left="72" Canvas.Top="220" >
+                    <Label x:Name="lb_respawn"  Content="XXXX"  HorizontalAlignment="Left"  Height="36" VerticalAlignment="Top" Width="162" Canvas.Left="72" Canvas.Top="16" FontFamily="Tw Cen MT Condensed" FontSize="26" Foreground="White"/>
+                </Border>
+                <Label  Content="ARTS RESISTANCE :"  HorizontalAlignment="Left" Height="31" VerticalAlignment="Top" Width="172" Canvas.Left="71" RenderTransformOrigin="0.5,0.5" FontFamily="Tw Cen MT Condensed" Foreground="#FFC095FF" FontSize="20" Canvas.Top="132"/>
+                <Image  Height="54" Canvas.Left="10" Canvas.Top="75" Width="56" RenderTransformOrigin="0.594,1.486" Source="Stats_Icon/class_TANK.png" />
+                <Image  Height="54" Canvas.Left="11" Canvas.Top="13" Width="56" RenderTransformOrigin="0.594,1.486" Source="Stats_Icon/class_medic.png" />
+                <Image  Height="54" Canvas.Left="12" Canvas.Top="137" Width="56" RenderTransformOrigin="0.594,1.486" Source="Stats_Icon/class_SUPPORT.png"/>
+                <Label Content="RESPAWN TIME :"  HorizontalAlignment="Left" Height="31" VerticalAlignment="Top" Width="172" Canvas.Left="71" RenderTransformOrigin="0.5,0.5" FontFamily="Tw Cen MT Condensed" Foreground="#FFF5FFA3" FontSize="20" Canvas.Top="194"/>
+                <Image  Height="54" Canvas.Left="12" Canvas.Top="198" Width="56" RenderTransformOrigin="0.594,1.486" Source="Stats_Icon/sub_pusher_icon.png" />
+            </Canvas>
+        </DockPanel>
+
+
+        <DockPanel Margin="500,100,0,0" Opacity="0.7" HorizontalAlignment="Left" Width="304" Height="200" VerticalAlignment="Top">
+            <Canvas Height="122" VerticalAlignment="Top" >
+                <Border Canvas.Left="72" Canvas.Top="28" Width="225" BorderThickness="1,0,0,0" BorderBrush="LightGray">
+                    <Label x:Name="lb_profession" Content="????"  HorizontalAlignment="Left" Height="37" VerticalAlignment="Top" Width="225" Canvas.Left="72" Canvas.Top="16" FontSize="26" Foreground="White" FontFamily="Tw Cen MT Condensed"/>
+                </Border>
+                <Border Canvas.Left="72" Canvas.Top="93" Width="225" BorderThickness="1,0,0,0" BorderBrush="LightGray">
+                    <Label x:Name="lb_subp"  Content="????"  HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="165" Canvas.Left="72" Canvas.Top="16" FontFamily="Tw Cen MT Condensed" FontSize="26" Foreground="White"/>
+                </Border>
+                <Label Content="SUB-PROFESSION : "  HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="172" Canvas.Left="71" RenderTransformOrigin="0.5,0.5" FontFamily="Tw Cen MT Condensed" Foreground="White" FontSize="20" Canvas.Top="66"/>
+                <Label Content="PROFESSION :"  HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="172" Canvas.Left="70" RenderTransformOrigin="0.5,0.5" FontFamily="Tw Cen MT Condensed" Foreground="White" FontSize="20" Canvas.Top="4"/>
+                <Border Canvas.Left="72" Canvas.Top="158" Width="225" BorderThickness="1,0,0,0" BorderBrush="LightGray" >
+                    <Label x:Name="lb_nation" Content="????"  HorizontalAlignment="Left"  Height="36" VerticalAlignment="Top" Width="162" Canvas.Left="72" Canvas.Top="16" FontFamily="Tw Cen MT Condensed" FontSize="26" Foreground="White"/>
+                </Border>
+                <Label Content="NATION :"  HorizontalAlignment="Left" Height="31" VerticalAlignment="Top" Width="172" Canvas.Left="71" RenderTransformOrigin="0.5,0.5" FontFamily="Tw Cen MT Condensed" Foreground="White" FontSize="20" Canvas.Top="132"/>
+                <Image x:Name="image_sprofession"  Height="54" Canvas.Left="10" Canvas.Top="75" Width="56" RenderTransformOrigin="0.594,1.486" Source="OpPictures/system_100_mys.png" />
+                <Image x:Name="image_profession"  Height="54" Canvas.Left="11" Canvas.Top="13" Width="56" RenderTransformOrigin="0.594,1.486" Source="OpPictures/system_100_mys.png" />
+                <Image x:Name="image_position"  Height="54" Canvas.Left="12" Canvas.Top="137" Width="56" RenderTransformOrigin="0.594,1.486" Source="OpPictures/system_100_mys.png" />
+            </Canvas>
+        </DockPanel>
+
+        <DockPanel Margin="24,251,0,0" Opacity="0.7" HorizontalAlignment="Left" Width="304" Height="96" VerticalAlignment="Top">
+            <Canvas Height="104" VerticalAlignment="Top" >
+                <Border Canvas.Left="67" Canvas.Top="64" BorderThickness="1,0,0,0" BorderBrush="LightGray" Width="89">
+                    <Label x:Name="lb_cost" Content="COST : "  HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="131" Canvas.Left="72" Canvas.Top="16" FontSize="21" Foreground="White" FontFamily="Tw Cen MT Condensed"/>
+                </Border>
+                <Label Content=""  HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="172" Canvas.Left="70" RenderTransformOrigin="0.5,0.5" FontFamily="Tw Cen MT Condensed" Foreground="White" FontSize="18" Canvas.Top="42"/>
+                <Image Height="39" Canvas.Left="26" Canvas.Top="61" Width="44" RenderTransformOrigin="0.594,1.486" Source="OpPictures/system_100_mys.png" />
+            </Canvas>
+        </DockPanel>
+
+        <DockPanel Margin="143,251,0,0" Opacity="0.7" HorizontalAlignment="Left" Width="304" Height="96" VerticalAlignment="Top">
+            <Canvas Height="104" VerticalAlignment="Top" >
+                <Border Canvas.Left="67" Canvas.Top="64" BorderThickness="1,0,0,0" BorderBrush="LightGray" Width="89">
+                    <Label x:Name="lb_position" Content="POSITION: "  HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="154" Canvas.Left="72" Canvas.Top="16" FontSize="21" Foreground="White" FontFamily="Tw Cen MT Condensed" Margin="0,0,-66,0"/>
+                </Border>
+                <Label Content=""  HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="172" Canvas.Left="70" RenderTransformOrigin="0.5,0.5" FontFamily="Tw Cen MT Condensed" Foreground="White" FontSize="18" Canvas.Top="42"/>
+                <Image Height="39" Canvas.Left="26" Canvas.Top="61" Width="44" RenderTransformOrigin="0.594,1.486" Source="OpPictures/system_100_mys.png" />
+            </Canvas>
+        </DockPanel>
+
+        <DockPanel Margin="336,251,0,0" Opacity="0.7" HorizontalAlignment="Left" Width="304" Height="96" VerticalAlignment="Top">
+            <Canvas Height="104" VerticalAlignment="Top" >
+                <Border Canvas.Left="67" Canvas.Top="64" BorderThickness="1,0,0,0" BorderBrush="LightGray" Width="111">
+                    <Label x:Name="lb_maxlevel" Content="MAX LEVEL: "  HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="131" Canvas.Left="72" Canvas.Top="16" FontSize="21" Foreground="White" FontFamily="Tw Cen MT Condensed"/>
+                </Border>
+                <Label Content=""  HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="172" Canvas.Left="70" RenderTransformOrigin="0.5,0.5" FontFamily="Tw Cen MT Condensed" Foreground="White" FontSize="18" Canvas.Top="42"/>
+                <Image Height="39" Canvas.Left="26" Canvas.Top="61" Width="44" RenderTransformOrigin="0.594,1.486" Source="OpPictures/system_100_mys.png" />
+            </Canvas>
+        </DockPanel>
+
+        <DockPanel Margin="501,251,0,0" Opacity="0.7" HorizontalAlignment="Left" Width="304" Height="96" VerticalAlignment="Top">
+            <Canvas Height="104" VerticalAlignment="Top" >
+                <Border Canvas.Left="67" Canvas.Top="64" BorderThickness="1,0,0,0" BorderBrush="LightGray" Width="89">
+                    <Label x:Name="lb_rare" Content="RARITY:   "  HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="131" Canvas.Left="72" Canvas.Top="16" FontSize="21" Foreground="White" FontFamily="Tw Cen MT Condensed"/>
+                </Border>
+                <Label Content=""  HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="172" Canvas.Left="70" RenderTransformOrigin="0.5,0.5" FontFamily="Tw Cen MT Condensed" Foreground="White" FontSize="18" Canvas.Top="42"/>
+                <Image Height="39" Canvas.Left="26" Canvas.Top="61" Width="44" RenderTransformOrigin="0.594,1.486" Source="OpPictures/system_100_mys.png" />
+            </Canvas>
+        </DockPanel>
+
+
+
+
+        <Canvas x:Name="myCanvas" Margin="2,0,-2,585.5" ForceCursor="True">
+            <Border Height="45" Canvas.Left="322" Opacity="0.6" BorderBrush="DarkGray" Canvas.Top="8" Width="136" BorderThickness="1,0,1,0">
+                <DockPanel>
+                    <Image Source="Stats_Icon/sub_craftsman_icon.png" />
+                    <Button Content="Button           " HorizontalAlignment="Left"  BorderBrush="Transparent" Background="Transparent" Foreground="DarkGray" FontFamily="Tw Cen MT Condensed" FontSize="25" Height="45" Canvas.Left="322" Canvas.Top="8" Width="136" />
+                </DockPanel>
+            </Border>
+
+            <Border Height="45" Canvas.Left="472" Opacity="0.6" BorderBrush="DarkGray" Canvas.Top="8" Width="136" BorderThickness="1,0,1,0">
+                <DockPanel>
+                    <Image Source="Stats_Icon/sub_craftsman_icon.png" />
+                    <Button Content=" VIDEO             " HorizontalAlignment="Left"  BorderBrush="Transparent" Background="Transparent" Foreground="DarkGray" FontFamily="Tw Cen MT Condensed" FontSize="25" Height="45" Canvas.Left="322" Canvas.Top="8" Width="136" />
+                </DockPanel>
+            </Border>
+            <Border Height="45" Canvas.Left="623" Opacity="0.6" BorderBrush="DarkGray" Canvas.Top="8" Width="136" BorderThickness="1,0,1,0">
+                <DockPanel>
+                    <Image Source="Stats_Icon/sub_craftsman_icon.png" />
+                    <Button Content="CREDITS         " HorizontalAlignment="Left"  BorderBrush="Transparent" Background="Transparent" Foreground="DarkGray" FontFamily="Tw Cen MT Condensed" FontSize="25" Height="45" Canvas.Left="322" Canvas.Top="8" Width="136" Click="Button_Click" />
+                </DockPanel>
+            </Border>
+        </Canvas>
+
+        <DockPanel Margin="90,360,0,0" Opacity="0.7" HorizontalAlignment="Left" Width="284" Height="204" VerticalAlignment="Top">
+            <Canvas Height="122" VerticalAlignment="Top" >
+                <Border Canvas.Left="72" Canvas.Top="28" >
+                    <Label x:Name="lb_attack" Content="DEFENDER"  HorizontalAlignment="Left" Height="37" VerticalAlignment="Top" Width="247" Canvas.Left="72" Canvas.Top="16" FontSize="26" Foreground="White" FontFamily="Tw Cen MT Condensed"/>
+                </Border>
+                <Border Canvas.Left="72" Canvas.Top="93" >
+                    <Label x:Name="lb_atkspeed" Content="HEALING DEFENDER"  HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="165" Canvas.Left="72" Canvas.Top="16" FontFamily="Tw Cen MT Condensed" FontSize="26" Foreground="White"/>
+                </Border>
+                <Border Canvas.Left="-100" Canvas.Top="118" RenderTransformOrigin="0.5,0.5" >
+                    <Border.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-90"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Border.RenderTransform>
+                    <Label Content="MAX LEVEL + TRUST"  HorizontalAlignment="Left" Height="37" VerticalAlignment="Top" Width="165" Canvas.Left="72" Canvas.Top="16" FontFamily="Tw Cen MT Condensed" FontSize="26" Foreground="White"/>
+                </Border>
+                <Label Content="ATTACK SPEED"  HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="172" Canvas.Left="71" RenderTransformOrigin="0.5,0.5" FontFamily="Tw Cen MT Condensed" Foreground="#FFFFC96C" FontSize="20" Canvas.Top="66"/>
+                <Label Content="ATTACK"  HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="172" Canvas.Left="70" RenderTransformOrigin="0.5,0.5" FontFamily="Tw Cen MT Condensed" Foreground="#FFFF6C46" FontSize="20" Canvas.Top="4"/>
+                <Border Canvas.Left="72" Canvas.Top="158" >
+                    <Label x:Name="lb_"  Content="????"  HorizontalAlignment="Left"  Height="36" VerticalAlignment="Top" Width="162" Canvas.Left="72" Canvas.Top="16" FontFamily="Tw Cen MT Condensed" FontSize="26" Foreground="White"/>
+                </Border>
+                <Border Canvas.Left="72" Canvas.Top="220" >
+                    <Label x:Name="lb_SPrecover"  Content="1.0"  HorizontalAlignment="Left"  Height="36" VerticalAlignment="Top" Width="162" Canvas.Left="72" Canvas.Top="16" FontFamily="Tw Cen MT Condensed" FontSize="26" Foreground="White"/>
+                </Border>
+                <Label Content="POSITION"  HorizontalAlignment="Left" Height="31" VerticalAlignment="Top" Width="172" Canvas.Left="71" RenderTransformOrigin="0.5,0.5" FontFamily="Tw Cen MT Condensed" Foreground="White" FontSize="20" Canvas.Top="132"/>
+                <Image  Height="54" Canvas.Left="10" Canvas.Top="75" Width="56" RenderTransformOrigin="0.594,1.486" Source="Stats_Icon/sub_chain_icon.png" />
+                <Image  Height="54" Canvas.Left="11" Canvas.Top="13" Width="56" RenderTransformOrigin="0.594,1.486" Source="Stats_Icon/class_WARRIOR.png" />
+                <Image  Height="54" Canvas.Left="12" Canvas.Top="137" Width="56" RenderTransformOrigin="0.594,1.486" Source="Stats_Icon/sub_bombarder_icon.png"/>
+                <Label Content="SP RECOVERY"  HorizontalAlignment="Left" Height="31" VerticalAlignment="Top" Width="172" Canvas.Left="71" RenderTransformOrigin="0.5,0.5" FontFamily="Tw Cen MT Condensed" Foreground="#FF7BB7FF" FontSize="20" Canvas.Top="194"/>
+                <Image  Height="54" Canvas.Left="12" Canvas.Top="198" Width="56" RenderTransformOrigin="0.594,1.486" Source="Stats_Icon/sub_funnel_icon.png" />
+            </Canvas>
+        </DockPanel>
+        <Border x:Name="ScreenC" BorderBrush="Black" Opacity="1" BorderThickness="1" Background="#FF121212" CornerRadius="10" Margin="-8,82,0,0" HorizontalAlignment="Left" Width="930" Height="552" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+            <Image Source="FactionPictures/logo_rhine.png" Opacity="0.7" Margin="0,0,-2,0" />
+            <Border.Effect>
+                <DropShadowEffect Color="Black" Direction="320" ShadowDepth="5"
+                    Opacity="0.8" BlurRadius="10"/>
+            </Border.Effect>
+        </Border>
+
+
     </Grid>
+
 </Window>

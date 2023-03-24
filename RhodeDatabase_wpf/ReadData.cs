@@ -21,7 +21,7 @@ namespace RhodeDatabase_wpf
         public ReadData()
         {
             Read_Operator_Database();
-            Read_Operator_Profile();
+            //Read_Operator_Profile();
             Dynamic_JSON();
         }
 

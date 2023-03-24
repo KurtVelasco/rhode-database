@@ -901,12 +901,140 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Stats_Icon\classes.png" />
+    <Resource Include="Stats_Icon\classes_cleaned.png" />
+    <Resource Include="Stats_Icon\class_caster.png" />
+    <Resource Include="Stats_Icon\class_medic.png" />
+    <Resource Include="Stats_Icon\class_PIONEER.png" />
+    <Resource Include="Stats_Icon\class_sniper.png" />
+    <Resource Include="Stats_Icon\class_SPECIAL.png" />
+    <Resource Include="Stats_Icon\class_SUPPORT.png" />
+    <Resource Include="Stats_Icon\class_TANK.png" />
+    <Resource Include="Stats_Icon\class_WARRIOR.png" />
+    <Resource Include="Stats_Icon\sub_agent_icon.png" />
+    <Resource Include="Stats_Icon\sub_aoesniper_icon.png" />
+    <Resource Include="Stats_Icon\sub_artsfghter_icon.png" />
+    <Resource Include="Stats_Icon\sub_artsprotector_icon.png" />
+    <Resource Include="Stats_Icon\sub_bard_icon.png" />
+    <Resource Include="Stats_Icon\sub_bearer_icon.png" />
+    <Resource Include="Stats_Icon\sub_blastcaster_icon.png" />
+    <Resource Include="Stats_Icon\sub_blessing_icon.png" />
+    <Resource Include="Stats_Icon\sub_bombarder_icon.png" />
+    <Resource Include="Stats_Icon\sub_centurion_icon.png" />
+    <Resource Include="Stats_Icon\sub_chainhealer_icon.png" />
+    <Resource Include="Stats_Icon\sub_chain_icon.png" />
+    <Resource Include="Stats_Icon\sub_charger_icon.png" />
+    <Resource Include="Stats_Icon\sub_closerange_icon.png" />
+    <Resource Include="Stats_Icon\sub_corecaster_icon.png" />
+    <Resource Include="Stats_Icon\sub_craftsman_icon.png" />
+    <Resource Include="Stats_Icon\sub_crusher_icon.png" />
+    <Resource Include="Stats_Icon\sub_dollkeeper_icon.png" />
+    <Resource Include="Stats_Icon\sub_duelist_icon.png" />
+    <Resource Include="Stats_Icon\sub_executor_icon.png" />
+    <Resource Include="Stats_Icon\sub_fastshot_icon.png" />
+    <Resource Include="Stats_Icon\sub_fearless_icon.png" />
+    <Resource Include="Stats_Icon\sub_fighter_icon.png" />
+    <Resource Include="Stats_Icon\sub_fortress_icon.png" />
+    <Resource Include="Stats_Icon\sub_funnel_icon.png" />
+    <Resource Include="Stats_Icon\sub_geek_icon.png" />
+    <Resource Include="Stats_Icon\sub_guardian_icon.png" />
+    <Resource Include="Stats_Icon\sub_healer_icon.png" />
+    <Resource Include="Stats_Icon\sub_hookmaster_icon.png" />
+    <Resource Include="Stats_Icon\sub_incantationmedic_icon.png" />
+    <Resource Include="Stats_Icon\sub_instructor_icon.png" />
+    <Resource Include="Stats_Icon\sub_librator_icon.png" />
+    <Resource Include="Stats_Icon\sub_longrange_icon.png" />
+    <Resource Include="Stats_Icon\sub_lord_icon.png" />
+    <Resource Include="Stats_Icon\sub_merchant_icon.png" />
+    <Resource Include="Stats_Icon\sub_musha_icon.png" />
+    <Resource Include="Stats_Icon\sub_mystic_icon.png" />
+    <Resource Include="Stats_Icon\sub_phalanx_icon.png" />
+    <Resource Include="Stats_Icon\sub_physician_icon.png" />
+    <Resource Include="Stats_Icon\sub_pioneer_icon.png" />
+    <Resource Include="Stats_Icon\sub_protector_icon.png" />
+    <Resource Include="Stats_Icon\sub_pusher_icon.png" />
+    <Resource Include="Stats_Icon\sub_reaperrange_icon.png" />
+    <Resource Include="Stats_Icon\sub_reaper_icon.png" />
+    <Resource Include="Stats_Icon\sub_ringhealer_icon.png" />
+    <Resource Include="Stats_Icon\sub_shotprotector_icon.png" />
+    <Resource Include="Stats_Icon\sub_siegesniper_icon.png" />
+    <Resource Include="Stats_Icon\sub_slower_icon.png" />
+    <Resource Include="Stats_Icon\sub_splashcaster_icon.png" />
+    <Resource Include="Stats_Icon\sub_stalker_icon.png" />
+    <Resource Include="Stats_Icon\sub_summoner_icon.png" />
+    <Resource Include="Stats_Icon\sub_sword_icon.png" />
+    <Resource Include="Stats_Icon\sub_tactician_icon.png" />
+    <Resource Include="Stats_Icon\sub_traper_icon.png" />
+    <Resource Include="Stats_Icon\sub_underminer_icon.png" />
+    <Resource Include="Stats_Icon\sub_unyield_icon.png" />
+    <Resource Include="Stats_Icon\sub_wandermedic_icon.png" />
+    <Resource Include="ClassPictures\classes.png" />
+    <Resource Include="ClassPictures\classes_cleaned.png" />
+    <Resource Include="ClassPictures\class_caster.png" />
+    <Resource Include="ClassPictures\class_medic.png" />
+    <Resource Include="ClassPictures\class_PIONEER.png" />
+    <Resource Include="ClassPictures\class_sniper.png" />
+    <Resource Include="ClassPictures\class_SPECIAL.png" />
+    <Resource Include="ClassPictures\class_SUPPORT.png" />
+    <Resource Include="ClassPictures\class_TANK.png" />
+    <Resource Include="ClassPictures\class_WARRIOR.png" />
     <Content Include="Database_text\ArknightDatabase.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Database_text\ArknightProfiles.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Resource Include="FactionPictures\logo_abyssal.png" />
+    <Resource Include="FactionPictures\logo_action4.png" />
+    <Resource Include="FactionPictures\logo_babel.png" />
+    <Resource Include="FactionPictures\logo_blacksteel.png" />
+    <Resource Include="FactionPictures\logo_bolivar.png" />
+    <Resource Include="FactionPictures\logo_chiave.png" />
+    <Resource Include="FactionPictures\logo_columbia.png" />
+    <Resource Include="FactionPictures\logo_dublinn.png" />
+    <Resource Include="FactionPictures\logo_egir.png" />
+    <Resource Include="FactionPictures\logo_elite.png" />
+    <Resource Include="FactionPictures\logo_followers.png" />
+    <Resource Include="FactionPictures\logo_glasgow.png" />
+    <Resource Include="FactionPictures\logo_higashi.png" />
+    <Resource Include="FactionPictures\logo_iberia.png" />
+    <Resource Include="FactionPictures\logo_karlan.png" />
+    <Resource Include="FactionPictures\logo_kazimierz.png" />
+    <Resource Include="FactionPictures\logo_kjerag.png" />
+    <Resource Include="FactionPictures\logo_laterano.png" />
+    <Resource Include="FactionPictures\logo_lee.png" />
+    <Resource Include="FactionPictures\logo_leithanien.png" />
+    <Resource Include="FactionPictures\logo_lgd.png" />
+    <Resource Include="FactionPictures\logo_lungmen.png" />
+    <Resource Include="FactionPictures\logo_minos.png" />
+    <Resource Include="FactionPictures\logo_penguin.png" />
+    <Resource Include="FactionPictures\logo_pinus.png" />
+    <Resource Include="FactionPictures\logo_rainbow.png" />
+    <Resource Include="FactionPictures\logo_reserve1.png" />
+    <Resource Include="FactionPictures\logo_reserve4.png" />
+    <Resource Include="FactionPictures\logo_reserve6.png" />
+    <Resource Include="FactionPictures\logo_rhine.png" />
+    <Resource Include="FactionPictures\logo_rhodes.png" />
+    <Resource Include="FactionPictures\logo_rhodes_override.png" />
+    <Resource Include="FactionPictures\logo_rim.png" />
+    <Resource Include="FactionPictures\logo_sami.png" />
+    <Resource Include="FactionPictures\logo_sargon.png" />
+    <Resource Include="FactionPictures\logo_siesta.png" />
+    <Resource Include="FactionPictures\logo_siracusa.png" />
+    <Resource Include="FactionPictures\logo_student.png" />
+    <Resource Include="FactionPictures\logo_sui.png" />
+    <Resource Include="FactionPictures\logo_sweep.png" />
+    <Resource Include="FactionPictures\logo_ursus.png" />
+    <Resource Include="FactionPictures\logo_victoria.png" />
+    <Resource Include="FactionPictures\logo_yan.png" />
+    <Resource Include="FactionPictures\none.png" />
+    <Content Include="RhodeAssets\Op_Background.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="RhodeAssets\home_bg.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
